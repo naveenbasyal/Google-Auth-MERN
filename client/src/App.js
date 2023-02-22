@@ -17,9 +17,9 @@ const App = () => {
         <Login response={response} />
       ) : (
         <div>
-          <img src={authState.profileObj.imageUrl} alt="" />
-          <h3>{authState.profileObj.name}</h3>
-          <h4>{authState.profileObj.email}</h4>
+          <img src={authState.data.picture} alt="UserImg" />
+          <h3>{authState.data.name}</h3>
+          <h4>{authState.data.email}</h4>
           <Logout response={response} />
         </div>
       )}
